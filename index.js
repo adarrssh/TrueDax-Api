@@ -51,7 +51,7 @@ app.post('/user', async (req, res) => {
 
         if (getUser) {
 
-            res.status(200).send('You have already send a message')
+            res.status(200).send('You have already sent a message')
 
         } else {
 
