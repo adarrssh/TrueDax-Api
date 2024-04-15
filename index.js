@@ -35,6 +35,10 @@ app.post('/user', (req, res) => {
     }
 });
 
+app.get('/user',(req,res)=>{
+    res.send("hey :: "+process.env.API_KEY)
+})
+
 app.listen(port, () => {
     console.log(`Server is running on :${port}`);
 });
